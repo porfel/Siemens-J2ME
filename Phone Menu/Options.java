@@ -4,7 +4,7 @@ import javax.microedition.rms.RecordStoreException;
 
 public class Options extends Canvas implements CommandListener{
     
-    public String[] OPT = {"Альт. меню: ","Сброс","О программе","Выход"};
+    public String[] OPT = {"РђР»СЊС‚. РјРµРЅСЋ: ","РЎР±СЂРѕСЃ","Рћ РїСЂРѕРіСЂР°РјРјРµ","Р’С‹С…РѕРґ"};
     
     public String STAT = "";
     
@@ -37,13 +37,13 @@ public class Options extends Canvas implements CommandListener{
         g.drawString(AL(),2+FNT2.stringWidth(OPT[0]),17,0);
         g.setColor(0x000000);
         g.setFont(FNT);
-        g.drawString("Опции",10,2,0);
+        g.drawString("РћРїС†РёРё",10,2,0);
         Image Foother = Image.createImage(Menu.MM.BACK,0,Menu.MM.BACK.getHeight()-15,Menu.MM.BACK.getWidth(),15,0);
         g.drawImage(Foother,0,getHeight()-15,0);
         drawMenu(g);
         g.setColor(0x000000);
         g.setFont(FNT);
-        g.drawString("Назад",getWidth()-(FNT.stringWidth("Назад")+15),getHeight()-(FNT.getHeight()+1),0);
+        g.drawString("РќР°Р·Р°Рґ",getWidth()-(FNT.stringWidth("РќР°Р·Р°Рґ")+15),getHeight()-(FNT.getHeight()+1),0);
     }
     
     private void drawMenu(Graphics g){
@@ -82,9 +82,9 @@ public class Options extends Canvas implements CommandListener{
                     }
                     break;
                     case 1:{
-                        Alert AL = new Alert("Внимание!","Эта операция удалит ВСЕ настройки программы, включая настройки альт. меню!",null,AlertType.ALARM);
-                        AL.addCommand(new Command("Нет",Command.CANCEL,1));
-                        AL.addCommand(new Command("Да",Command.OK,2));
+                        Alert AL = new Alert("Р’РЅРёРјР°РЅРёРµ!","Р­С‚Р° РѕРїРµСЂР°С†РёСЏ СѓРґР°Р»РёС‚ Р’РЎР• РЅР°СЃС‚СЂРѕР№РєРё РїСЂРѕРіСЂР°РјРјС‹, РІРєР»СЋС‡Р°СЏ РЅР°СЃС‚СЂРѕР№РєРё Р°Р»СЊС‚. РјРµРЅСЋ!",null,AlertType.ALARM);
+                        AL.addCommand(new Command("РќРµС‚",Command.CANCEL,1));
+                        AL.addCommand(new Command("Р”Р°",Command.OK,2));
                         AL.setCommandListener(this);
                         Menu.disp.setCurrent(AL,Menu.OPT);
                     }

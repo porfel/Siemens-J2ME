@@ -9,20 +9,20 @@ public class Misc implements CommandListener{
     }
     
     public void displayHelp(){
-        misc = new Form("Справка");
+        misc = new Form("РЎРїСЂР°РІРєР°");
         misc.setCommandListener(this);
-        StringItem help = new StringItem(null,"В режиме ожидания наберите \"*#06#\" и перейдите на 3-ю вкладку.\nПерепишите значения соответствующих полей и введите их в программе. \nПосле нажатия кнопки \"Расшифровать\" программа выполнит расшифровку соответствующих полей.\n");
+        StringItem help = new StringItem(null,"Р’ СЂРµР¶РёРјРµ РѕР¶РёРґР°РЅРёСЏ РЅР°Р±РµСЂРёС‚Рµ \"*#06#\" Рё РїРµСЂРµР№РґРёС‚Рµ РЅР° 3-СЋ РІРєР»Р°РґРєСѓ.\nРџРµСЂРµРїРёС€РёС‚Рµ Р·РЅР°С‡РµРЅРёСЏ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёС… РїРѕР»РµР№ Рё РІРІРµРґРёС‚Рµ РёС… РІ РїСЂРѕРіСЂР°РјРјРµ. \nРџРѕСЃР»Рµ РЅР°Р¶Р°С‚РёСЏ РєРЅРѕРїРєРё \"Р Р°СЃС€РёС„СЂРѕРІР°С‚СЊ\" РїСЂРѕРіСЂР°РјРјР° РІС‹РїРѕР»РЅРёС‚ СЂР°СЃС€РёС„СЂРѕРІРєСѓ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёС… РїРѕР»РµР№.\n");
         misc.append(help);
-        misc.addCommand(new Command("ОК",Command.OK,0));
+        misc.addCommand(new Command("РћРљ",Command.OK,0));
         CCMon.disp.setCurrent(misc);
     }
     
     public void displayAbout(){
-        misc = new Form("О программе");
+        misc = new Form("Рћ РїСЂРѕРіСЂР°РјРјРµ");
         misc.setCommandListener(this);
-        StringItem help = new StringItem(null,"CC-Monitor x85\n\nПрограмма для расшифровки CC-Monitor'a для NEWSgold телефонов.\n\n(c) 2007 by Porfel\n\nhttp://forum.s-c.ru");
+        StringItem help = new StringItem(null,"CC-Monitor x85\n\nРџСЂРѕРіСЂР°РјРјР° РґР»СЏ СЂР°СЃС€РёС„СЂРѕРІРєРё CC-Monitor'a РґР»СЏ NEWSgold С‚РµР»РµС„РѕРЅРѕРІ.\n\n(c) 2007 by Porfel\n\nhttp://forum.s-c.ru");
         misc.append(help);
-        misc.addCommand(new Command("ОК",Command.OK,0));
+        misc.addCommand(new Command("РћРљ",Command.OK,0));
         CCMon.disp.setCurrent(misc);
     }
     

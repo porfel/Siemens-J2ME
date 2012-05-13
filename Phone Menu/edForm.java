@@ -24,14 +24,14 @@ public class edForm implements CommandListener{
         System.arraycopy(Menu.ALT.NAT,0,NAT,0,NAT.length);
         System.arraycopy(Menu.ALT.DSC,0,DSC,0,DSC.length);
         
-        edn = new TextField("Команда:",NAT[idx],30,TextField.ANY);
-        edd = new TextField("Описание:",DSC[idx],50,TextField.ANY);
+        edn = new TextField("РљРѕРјР°РЅРґР°:",NAT[idx],30,TextField.ANY);
+        edd = new TextField("РћРїРёСЃР°РЅРёРµ:",DSC[idx],50,TextField.ANY);
         
         Item[] itm = {edn,edd};
         
-        frm = new Form("Изменить",itm);
-        frm.addCommand(new Command("Сохр.",Command.OK,0));
-        frm.addCommand(new Command("Отмена",Command.OK,1));
+        frm = new Form("РР·РјРµРЅРёС‚СЊ",itm);
+        frm.addCommand(new Command("РЎРѕС…СЂ.",Command.OK,0));
+        frm.addCommand(new Command("РћС‚РјРµРЅР°",Command.OK,1));
         frm.setCommandListener(this);
         Menu.disp.setCurrent(frm);
     }

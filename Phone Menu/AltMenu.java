@@ -40,9 +40,9 @@ public class AltMenu extends Canvas{
         Image Foother = Image.createImage(Menu.MM.BACK,0,Menu.MM.BACK.getHeight()-15,132,15,0);
         g.drawImage(Foother,0,getHeight()-15,0);
         g.setColor(0x000000);
-        g.drawString("Моё меню",10,2,0);
-        g.drawString("Правка",2,getHeight()-15+2,0);
-        g.drawString("Назад",getWidth()-(g.getFont().stringWidth("Назад")+15),getHeight()-15+2,0);
+        g.drawString("РњРѕС‘ РјРµРЅСЋ",10,2,0);
+        g.drawString("РџСЂР°РІРєР°",2,getHeight()-15+2,0);
+        g.drawString("РќР°Р·Р°Рґ",getWidth()-(g.getFont().stringWidth("РќР°Р·Р°Рґ")+15),getHeight()-15+2,0);
     }
     
     private void drawCommands(Graphics g){

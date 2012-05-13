@@ -18,8 +18,8 @@ public class About extends Canvas{
         
         g.setFont(FNT);
         g.setColor(0x000000);
-        g.drawString("О программе",10,2,0);
-        g.drawString("Назад",getWidth()-(FNT.stringWidth("Назад")+15),getHeight()-(FNT.getHeight()+1),0);
+        g.drawString("Рћ РїСЂРѕРіСЂР°РјРјРµ",10,2,0);
+        g.drawString("РќР°Р·Р°Рґ",getWidth()-(FNT.stringWidth("РќР°Р·Р°Рґ")+15),getHeight()-(FNT.getHeight()+1),0);
         g.setColor(0xffffff);
         
         g.setFont(FNT2);
@@ -40,7 +40,7 @@ public class About extends Canvas{
             g.setFont(FNT);
             
             g.drawString("RTFM - background ",2,77,0);
-            g.drawString("Клименс - menu icons",2,92,0);
+            g.drawString("РљР»РёРјРµРЅСЃ - menu icons",2,92,0);
             g.drawString("Front242, PRM - N.CMD.",2,107,0);
             g.drawString("Zero-Cool - tester",2,122,0);
             
@@ -54,7 +54,7 @@ public class About extends Canvas{
             
             g.setFont(FNT);
             
-            g.drawString("RTFM, Клименс,",2,63,0);
+            g.drawString("RTFM, РљР»РёРјРµРЅСЃ,",2,63,0);
             g.drawString("PRM, Front242",2,78,0);
             
             g.setColor(0xffffff);

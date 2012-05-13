@@ -27,14 +27,14 @@ public class RMS {
         if (Menu.NSG){
         NAT = new String[]{"NAT_CONTACTS_LIST","NAT_MSG_CREATE_SMS","NAT_INT_BROWSER","NAT_ORG_CALENDAR",
         "NAT_ALARM_CLOCK","NAT_CAM_TAKE_PICT","NAT_MEDIA_PLAYER","NAT_EX_GAMES","NAT_TONES_ON_OFF","NAT_MY_STUFF"};
-        DSC = new String[]{"Адресная книга","Создать новое SMS","Интернет","Календарь",
-        "Будильник","Камера","Плеер","Игры","Вкл./Выкл. звуки","Мои файлы"};
+        DSC = new String[]{"РђРґСЂРµСЃРЅР°СЏ РєРЅРёРіР°","РЎРѕР·РґР°С‚СЊ РЅРѕРІРѕРµ SMS","РРЅС‚РµСЂРЅРµС‚","РљР°Р»РµРЅРґР°СЂСЊ",
+        "Р‘СѓРґРёР»СЊРЅРёРє","РљР°РјРµСЂР°","РџР»РµРµСЂ","РРіСЂС‹","Р’РєР»./Р’С‹РєР». Р·РІСѓРєРё","РњРѕРё С„Р°Р№Р»С‹"};
         }
         else{
         NAT = new String[]{"CNCT_ADDRESSBOK","CNCT_PHONE_BOOK","INTR_STRTBROWSR","ORGZ_CALENDERMV",
         "ELSE_ALARMCLOCK","MESG_WRT_NEWEMS","MESG_MESSGEMENU","RECD_MISSEDCALL","RECD_RECVEDCALL","FLSH_FLEXPLORER"};
-        DSC = new String[]{"Адресная книга","Тел. справочник","Интернет","Календарь",
-        "Будильник","Новое SMS","Сообщения","Неотв. вызовы","Прин. вызовы","Card-Explorer"};
+        DSC = new String[]{"РђРґСЂРµСЃРЅР°СЏ РєРЅРёРіР°","РўРµР». СЃРїСЂР°РІРѕС‡РЅРёРє","РРЅС‚РµСЂРЅРµС‚","РљР°Р»РµРЅРґР°СЂСЊ",
+        "Р‘СѓРґРёР»СЊРЅРёРє","РќРѕРІРѕРµ SMS","РЎРѕРѕР±С‰РµРЅРёСЏ","РќРµРѕС‚РІ. РІС‹Р·РѕРІС‹","РџСЂРёРЅ. РІС‹Р·РѕРІС‹","Card-Explorer"};
         }
         try {
             addCommArray(NAT,DSC,-1);

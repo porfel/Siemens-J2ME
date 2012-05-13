@@ -14,14 +14,14 @@ public class HEXString extends MIDlet implements CommandListener{
     public HEXString(){
         disp = Display.getDisplay(this);
         HEXForm = new Form("HEXString 1.0");
-        input = new TextField("Введите текст:",null,512,TextField.ANY);
-        output = new TextField("HEX-Строка:",null,1546,TextField.ANY);
-        count = new TextField("Длина:","0 байт(а)",512,TextField.UNEDITABLE);
+        input = new TextField("Р’РІРµРґРёС‚Рµ С‚РµРєСЃС‚:",null,512,TextField.ANY);
+        output = new TextField("HEX-РЎС‚СЂРѕРєР°:",null,1546,TextField.ANY);
+        count = new TextField("Р”Р»РёРЅР°:","0 Р±Р°Р№С‚(Р°)",512,TextField.UNEDITABLE);
         HEXForm.append(input);
         HEXForm.append(count);
         HEXForm.append(output);
-        HEXForm.addCommand(new Command("ОК",Command.OK,0));
-        HEXForm.addCommand(new Command("Выход",Command.EXIT,1));
+        HEXForm.addCommand(new Command("РћРљ",Command.OK,0));
+        HEXForm.addCommand(new Command("Р’С‹С…РѕРґ",Command.EXIT,1));
         HEXForm.setCommandListener(this);
     }
     
@@ -53,7 +53,7 @@ public class HEXString extends MIDlet implements CommandListener{
                 }
                 int size = b.length;
                 output.setString(out.substring(0,out.length()-1));
-                count.setString(size+" байт(а)");
+                count.setString(size+" Р±Р°Р№С‚(Р°)");
             }
             break;
             case 1: this.notifyDestroyed();

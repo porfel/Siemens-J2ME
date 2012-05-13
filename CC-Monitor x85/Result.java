@@ -8,12 +8,12 @@ public class Result implements CommandListener{
     
     public Result(MIDlet m) {
         main = m;
-        results = new Form("Результаты");
+        results = new Form("Р РµР·СѓР»СЊС‚Р°С‚С‹");
         results.setCommandListener(this);
     }
     
     public void ShowResults(){
-        results = new Form("Результаты");
+        results = new Form("Р РµР·СѓР»СЊС‚Р°С‚С‹");
         results.deleteAll();
         results.setCommandListener(this);
         String ot = Util.decodeOther(CCMon.input.other.getString());
@@ -23,12 +23,12 @@ public class Result implements CommandListener{
         String di = Util.decodeDiagnostic(CCMon.input.diagnostic.getString());
         String pr = Util.decodeProvider(CCMon.input.provider.getString());
         
-        StringItem other = new StringItem("Общее:",ot);
-        StringItem settings = new StringItem("Настройки:",se);
-        StringItem network = new StringItem("Сеть:",ne);
-        StringItem battary = new StringItem("Аккумулятор:",ba);
-        StringItem diagnostic = new StringItem("Диагностика:",di);
-        StringItem provider = new StringItem("Оператор:",pr);
+        StringItem other = new StringItem("РћР±С‰РµРµ:",ot);
+        StringItem settings = new StringItem("РќР°СЃС‚СЂРѕР№РєРё:",se);
+        StringItem network = new StringItem("РЎРµС‚СЊ:",ne);
+        StringItem battary = new StringItem("РђРєРєСѓРјСѓР»СЏС‚РѕСЂ:",ba);
+        StringItem diagnostic = new StringItem("Р”РёР°РіРЅРѕСЃС‚РёРєР°:",di);
+        StringItem provider = new StringItem("РћРїРµСЂР°С‚РѕСЂ:",pr);
         
         Font fnt = Font.getFont(Font.FACE_SYSTEM,Font.STYLE_BOLD,Font.SIZE_SMALL);
         
@@ -46,10 +46,10 @@ public class Result implements CommandListener{
         results.append(diagnostic);
         results.append(provider);
         
-        results.addCommand(new Command("Назад",Command.OK,0));
-        results.addCommand(new Command("Справка",Command.SCREEN,1));
-        results.addCommand(new Command("О программе",Command.SCREEN,2));
-        results.addCommand(new Command("Выход",Command.EXIT,3));
+        results.addCommand(new Command("РќР°Р·Р°Рґ",Command.OK,0));
+        results.addCommand(new Command("РЎРїСЂР°РІРєР°",Command.SCREEN,1));
+        results.addCommand(new Command("Рћ РїСЂРѕРіСЂР°РјРјРµ",Command.SCREEN,2));
+        results.addCommand(new Command("Р’С‹С…РѕРґ",Command.EXIT,3));
         
         
         CCMon.disp.setCurrent(results);

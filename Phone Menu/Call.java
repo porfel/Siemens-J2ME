@@ -8,12 +8,12 @@ public class Call implements CommandListener{
     }
 
     public void displayCallForm(){
-        call = new TextField("Номер:",null,30,TextField.PHONENUMBER);
-        FRM = new Form("Позвонить");
+        call = new TextField("РќРѕРјРµСЂ:",null,30,TextField.PHONENUMBER);
+        FRM = new Form("РџРѕР·РІРѕРЅРёС‚СЊ");
         FRM.append(call);
-        FRM.addCommand(new Command("Набрать",Command.OK,0));
-        FRM.addCommand(new Command("Назад",Command.OK,1));
-        FRM.addCommand(new Command("Тел. книга",Command.OK,2));
+        FRM.addCommand(new Command("РќР°Р±СЂР°С‚СЊ",Command.OK,0));
+        FRM.addCommand(new Command("РќР°Р·Р°Рґ",Command.OK,1));
+        FRM.addCommand(new Command("РўРµР». РєРЅРёРіР°",Command.OK,2));
         FRM.setCommandListener(this);
         Menu.disp.setCurrent(FRM);
     }

@@ -77,13 +77,13 @@ public class MainMenu extends Canvas implements Lib{
         g.setFont(FNT);
         g.setColor(0xffffff);
         if (!Menu.NSG)
-        g.drawString("Моё меню",2,getHeight()-(FNT.getHeight()+1),0);
+        g.drawString("РњРѕС‘ РјРµРЅСЋ",2,getHeight()-(FNT.getHeight()+1),0);
         if (!Menu.NSG)
         SEL = MDESC[POS];
         else SEL = MDNS[POS];
         g.drawString(SEL,10,2,0);
         g.drawString(POS+1+"",getWidth()-10,2,0);
-        if (!Menu.NSG)g.drawString("Опции",getWidth()-(FNT.stringWidth("Опции")+15),getHeight()-(FNT.getHeight()+1),0);
+        if (!Menu.NSG)g.drawString("РћРїС†РёРё",getWidth()-(FNT.stringWidth("РћРїС†РёРё")+15),getHeight()-(FNT.getHeight()+1),0);
         else g.drawString("About",getWidth()-(FNT.stringWidth("About")+15),getHeight()-(FNT.getHeight()+1),0);
         if (Menu.NSG){
             g.setFont(FNT3);

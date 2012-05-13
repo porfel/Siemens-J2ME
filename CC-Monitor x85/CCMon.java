@@ -1,11 +1,11 @@
-/* Класс, отвечающий за инициализацию мидлета. Прописан в MANIFEST.MF */
+/* РљР»Р°СЃСЃ, РѕС‚РІРµС‡Р°СЋС‰РёР№ Р·Р° РёРЅРёС†РёР°Р»РёР·Р°С†РёСЋ РјРёРґР»РµС‚Р°. РџСЂРѕРїРёСЃР°РЅ РІ MANIFEST.MF */
 
-import javax.microedition.midlet.*; // подключаем пакеты.
+import javax.microedition.midlet.*; // РїРѕРґРєР»СЋС‡Р°РµРј РїР°РєРµС‚С‹.
 import javax.microedition.lcdui.*;
 
-public class CCMon extends MIDlet { // Начало. Класс CCMon расширяет системный класс MIDlet, т.е. является его наследником.
+public class CCMon extends MIDlet { // РќР°С‡Р°Р»Рѕ. РљР»Р°СЃСЃ CCMon СЂР°СЃС€РёСЂСЏРµС‚ СЃРёСЃС‚РµРјРЅС‹Р№ РєР»Р°СЃСЃ MIDlet, С‚.Рµ. СЏРІР»СЏРµС‚СЃСЏ РµРіРѕ РЅР°СЃР»РµРґРЅРёРєРѕРј.
     
-    //Задаем объекты/переменные
+    //Р—Р°РґР°РµРј РѕР±СЉРµРєС‚С‹/РїРµСЂРµРјРµРЅРЅС‹Рµ
     
     public static Display disp;
     public static Result res;
@@ -13,19 +13,19 @@ public class CCMon extends MIDlet { // Начало. Класс CCMon расширяет системный к
     public static Misc misc;
     
     //**********************
-    //Далее конструктор класса//
+    //Р”Р°Р»РµРµ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєР»Р°СЃСЃР°//
     public CCMon(){
-        disp = Display.getDisplay(this); //Инициализируем объекты.
+        disp = Display.getDisplay(this); //РРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј РѕР±СЉРµРєС‚С‹.
         input = new InputForm(this);
         res = new Result(this);
         misc = new Misc();
     }
     
     //**********************
-    // метод startApp - системный, выполняется автоматически
+    // РјРµС‚РѕРґ startApp - СЃРёСЃС‚РµРјРЅС‹Р№, РІС‹РїРѕР»РЅСЏРµС‚СЃСЏ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё
     
     public void startApp() {
-        disp.setCurrent(input.IF); // Отображаем форму ввода. Устанавливаем дисплей на форме ввода с помощью метода setCurrent()
+        disp.setCurrent(input.IF); // РћС‚РѕР±СЂР°Р¶Р°РµРј С„РѕСЂРјСѓ РІРІРѕРґР°. РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РґРёСЃРїР»РµР№ РЅР° С„РѕСЂРјРµ РІРІРѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ РјРµС‚РѕРґР° setCurrent()
     }
     
     public void pauseApp() {

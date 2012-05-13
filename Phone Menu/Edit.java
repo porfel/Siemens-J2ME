@@ -8,12 +8,12 @@ public class Edit implements CommandListener{
     public static TextField desin;
     
     public Edit() {
-        lst = new List("Правка", List.IMPLICIT);
-        lst.append("Изменить",null);
-        lst.append("Добавить",null);
-        lst.append("Удалить",null);
-        lst.addCommand(new Command("Назад",Command.BACK,1));
-        lst.addCommand(new Command("ОК",Command.OK,0));
+        lst = new List("РџСЂР°РІРєР°", List.IMPLICIT);
+        lst.append("РР·РјРµРЅРёС‚СЊ",null);
+        lst.append("Р”РѕР±Р°РІРёС‚СЊ",null);
+        lst.append("РЈРґР°Р»РёС‚СЊ",null);
+        lst.addCommand(new Command("РќР°Р·Р°Рґ",Command.BACK,1));
+        lst.addCommand(new Command("РћРљ",Command.OK,0));
         lst.setCommandListener(this); 
     }
     

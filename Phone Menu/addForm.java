@@ -19,14 +19,14 @@ public class addForm implements CommandListener{
         System.arraycopy(Menu.ALT.NAT,0,NAT,0,Menu.ALT.NAT.length);
         System.arraycopy(Menu.ALT.DSC,0,DSC,0,Menu.ALT.DSC.length);
         
-        edn = new TextField("Команда:",null,30,TextField.ANY);
-        edd = new TextField("Описание:",null,50,TextField.ANY);
+        edn = new TextField("РљРѕРјР°РЅРґР°:",null,30,TextField.ANY);
+        edd = new TextField("РћРїРёСЃР°РЅРёРµ:",null,50,TextField.ANY);
         
         Item[] itm = {edn,edd};
         
-        frm = new Form("Добавить",itm);
-        frm.addCommand(new Command("Сохр.",Command.OK,2));
-        frm.addCommand(new Command("Отмена",Command.OK,3));
+        frm = new Form("Р”РѕР±Р°РІРёС‚СЊ",itm);
+        frm.addCommand(new Command("РЎРѕС…СЂ.",Command.OK,2));
+        frm.addCommand(new Command("РћС‚РјРµРЅР°",Command.OK,3));
         frm.setCommandListener(this);
         Menu.disp.setCurrent(frm);
     }

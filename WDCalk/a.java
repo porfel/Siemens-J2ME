@@ -10,7 +10,7 @@ public class a
 {
 
     public static final String DO_DO_aaStringaString[] = {
-        "Календарь", "Настройки", "Выбор даты", "Помощь", "О программе", "Выход"
+        "РљР°Р»РµРЅРґР°СЂСЊ", "РќР°СЃС‚СЂРѕР№РєРё", "Р’С‹Р±РѕСЂ РґР°С‚С‹", "РџРѕРјРѕС‰СЊ", "Рћ РїСЂРѕРіСЂР°РјРјРµ", "Р’С‹С…РѕРґ"
     };
     private t DO_DO_att;
     private WDCalk DO_DO_aMIDletMIDlet;

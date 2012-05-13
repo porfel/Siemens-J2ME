@@ -1,10 +1,10 @@
-/* Класс - Форма ввода */
+/* РљР»Р°СЃСЃ - Р¤РѕСЂРјР° РІРІРѕРґР° */
 
 import javax.microedition.io.ConnectionNotFoundException;
 import javax.microedition.lcdui.*;
 import javax.microedition.midlet.MIDlet;
 
-public class InputForm implements CommandListener{ // Класс реализует интерфейс CommandListener
+public class InputForm implements CommandListener{ // РљР»Р°СЃСЃ СЂРµР°Р»РёР·СѓРµС‚ РёРЅС‚РµСЂС„РµР№СЃ CommandListener
     
     public MIDlet main;
     public Form IF;
@@ -18,22 +18,22 @@ public class InputForm implements CommandListener{ // Класс реализует интерфейс 
     
     public InputForm(MIDlet m) {
         main = m;
-        other = new TextField("Общее:","",6,TextField.ANY);
-        settings = new TextField("Настройки:","",6,TextField.ANY);
-        network = new TextField("Сеть:","",6,TextField.ANY);
-        battary = new TextField("Аккумулятор:","",6,TextField.ANY);
-        diagnostic = new TextField("Диагностика:","",6,TextField.ANY);
-        provider = new TextField("Провайдер:","",6,TextField.ANY);
+        other = new TextField("РћР±С‰РµРµ:","",6,TextField.ANY);
+        settings = new TextField("РќР°СЃС‚СЂРѕР№РєРё:","",6,TextField.ANY);
+        network = new TextField("РЎРµС‚СЊ:","",6,TextField.ANY);
+        battary = new TextField("РђРєРєСѓРјСѓР»СЏС‚РѕСЂ:","",6,TextField.ANY);
+        diagnostic = new TextField("Р”РёР°РіРЅРѕСЃС‚РёРєР°:","",6,TextField.ANY);
+        provider = new TextField("РџСЂРѕРІР°Р№РґРµСЂ:","",6,TextField.ANY);
         Item[] items = new Item[]{other,settings,network,battary,diagnostic,provider};
-        IF = new Form("Значения",items);
-        IF.addCommand(new Command("Расшифровать",Command.OK,0));
-        IF.addCommand(new Command("Справка",Command.SCREEN,1));
-        IF.addCommand(new Command("О программе",Command.SCREEN,2));
-        IF.addCommand(new Command("Выход",Command.EXIT,3));
+        IF = new Form("Р—РЅР°С‡РµРЅРёСЏ",items);
+        IF.addCommand(new Command("Р Р°СЃС€РёС„СЂРѕРІР°С‚СЊ",Command.OK,0));
+        IF.addCommand(new Command("РЎРїСЂР°РІРєР°",Command.SCREEN,1));
+        IF.addCommand(new Command("Рћ РїСЂРѕРіСЂР°РјРјРµ",Command.SCREEN,2));
+        IF.addCommand(new Command("Р’С‹С…РѕРґ",Command.EXIT,3));
         IF.setCommandListener(this);
     }
     
-    public void commandAction(Command command, Displayable displayable) { // Управление
+    public void commandAction(Command command, Displayable displayable) { // РЈРїСЂР°РІР»РµРЅРёРµ
         switch (command.getPriority()){
             case 0:
                 CCMon.res.ShowResults();

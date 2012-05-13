@@ -1,9 +1,9 @@
 import javax.microedition.lcdui.*;
 public class Color implements CommandListener{
-    public static List colors = new List("Цвета",List.EXCLUSIVE);
+    public static List colors = new List("Р¦РІРµС‚Р°",List.EXCLUSIVE);
     
     public static int[] COLSCM = {0x000000,0x000000,0xffffff};
-    // 1: Цвет заголовка, 2: Цвет строки меню, 3: Цвет текста
+    // 1: Р¦РІРµС‚ Р·Р°РіРѕР»РѕРІРєР°, 2: Р¦РІРµС‚ СЃС‚СЂРѕРєРё РјРµРЅСЋ, 3: Р¦РІРµС‚ С‚РµРєСЃС‚Р°
     public Color(){
         
     }
