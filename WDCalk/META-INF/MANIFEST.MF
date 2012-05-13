@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.6.5
+Created-By: 1.5.0_06-b05 (Sun Microsystems Inc.)
+MIDlet-1: WDCalk, /icon.png, MIDlet
+MIDlet-Vendor: Porfel
+MIDlet-Icon: /icon.png
+MIDlet-Version: 1.1
+MIDlet-Name: WDCalk
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
+
